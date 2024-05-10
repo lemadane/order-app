@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // Set the target ECMAScript version (adjust if needed)
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+    "allowJs": true,                          // Allow compiling JavaScript files
+    "skipLibCheck": true,                     // Skip type checking for included libraries (might need adjustment)
+    "esModuleInterop": true,                  // Enable interoperability with ES modules
+    "allowSyntheticDefaultImports": true,     // Allow default imports from non-module files
+    "strict": true,                           // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "noImplicitAny": true,                    // Disallow implicit usage of 'any' type
+    "module": "CommonJS",                     // Module format (adjust if using ES modules)
+    "outDir": "dist",                         // Output directory for compiled files (optional)
+    "sourceMap": true,                        // Generate source maps for debugging
+    "baseUrl": ".",                           // Base directory for resolving non-relative modules (optional)
+    "paths": {
+      "@/*": ["src/*"]                        // Path mapping for custom modules (optional)
+    }
+  },
+  "include": ["src"]                          // Include source directory for compilation
+}
